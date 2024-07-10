@@ -44,7 +44,7 @@ jeans_images_triangle_men_back = ['https://i.yapx.cc/XrN0r.png','https://i.yapx.
 #СПИСОК КРАТКИХ ОПИСАНИЙ джинс
 jeans_short_triangle_men = ['Regular. Классический прямой крой, чуть сужающийся книзу. Для мужчин с любой фигурой.',
                             'Loose. Мешковатый фасон для полной свободы движения. Ткань практически не соприкасается с кожей. Не подходит полным людям и людям низкого роста.',
-                            'Relaxed. Более свободная модель, не прилегающая к телу, со слегка небрежной посадкой и расслабленным силуэтом. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.'
+                            'Relaxed. Более свободная модель, чем классика. Не прилегают к телу. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.'
                             ]
 '''КОНЕЦ ТРЕУГОЛЬНИКА'''
 
@@ -64,7 +64,7 @@ jeans_images_trap_men_back = ['https://i.yapx.cc/XrVPC.png','https://i.yapx.cc/X
 #СПИСОК КРАТКИХ ОПИСАНИЙ джинс
 jeans_short_trap_men = ['Slim. Прилегающие, но в меру просторные брюки. Для людей с пропорциональной фигурой. Скрывают мелкие недостатки. Не подходят людям, склонным к полноте.',
                         'Regular. Классический прямой крой, чуть сужающийся книзу. Для мужчин с любой фигурой.',
-                            'Relaxed. Более свободная модель, не прилегающая к телу, со слегка небрежной посадкой и расслабленным силуэтом. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.']
+                            'Relaxed. Более свободная модель, чем классика. Не прилегают к телу. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.']
 '''КОНЕЦ ТРАПЕЦИИ'''
 
 '''ОВАЛ'''
@@ -80,7 +80,7 @@ jeans_images_ell_men_back = ['https://i.yapx.cc/XrWw2.png','https://i.yapx.cc/Xr
 
 #СПИСОК КРАТКИХ ОПИСАНИЙ джинс
 jeans_short_ell_men = ['Loose. Мешковатый фасон для полной свободы движения. Ткань практически не соприкасается с кожей. Не подходит полным людям и людям низкого роста.',
-                            'Relaxed. Более свободная модель, не прилегающая к телу, со слегка небрежной посадкой и расслабленным силуэтом. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.'
+                            'Relaxed. Более свободная модель, чем классика. Не прилегают к телу. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.'
                             ]
 '''КОНЕЦ ОВАЛА'''
 
@@ -98,7 +98,7 @@ jeans_images_revtri_men_back = ['https://i.yapx.cc/XrN0r.png','https://i.yapx.cc
 
 #СПИСОК КРАТКИХ ОПИСАНИЙ джинс
 jeans_short_revtri_men = ['Regular. Классический прямой крой, чуть сужающийся книзу. Для мужчин с любой фигурой.',
-                            'Relaxed. Более свободная модель, не прилегающая к телу, со слегка небрежной посадкой и расслабленным силуэтом. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.'
+                            'Relaxed. Более свободная модель, чем классика. Не прилегают к телу. Хорошо подойдет рослым людям. Не рекомендуется для склонных к полноте.'
                             ]
 '''ПЕРЕВЕРНУТЫЙ ТРЕУГОЛЬНИК'''
 
@@ -194,8 +194,8 @@ def callback_handling(callback):
     #КНОПКА ПРЯМОУГОЛЬНИК 
     if callback.data == 'rectangle':
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='slim_medium_straight')
-        btn2 = types.InlineKeyboardButton('2',callback_data='regular_medium_straight')
+        btn1 = types.InlineKeyboardButton('slim',callback_data='slim_medium_straight')
+        btn2 = types.InlineKeyboardButton('regular',callback_data='regular_medium_straight')
         btn3 = types.InlineKeyboardButton('вернуться к выбору типа фигуры',callback_data='start')
         m.row(btn1,btn2)
         m.row(btn3)
@@ -209,9 +209,9 @@ def callback_handling(callback):
     #КНОПКА ТРЕУГОЛЬНИК 
     if callback.data == 'tri':
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='regular_medium_straight')
-        btn2 = types.InlineKeyboardButton('2',callback_data='loose_medium_straight')
-        btn3 = types.InlineKeyboardButton('3',callback_data='relaxed_medium_straight')
+        btn1 = types.InlineKeyboardButton('regular',callback_data='regular_medium_straight')
+        btn2 = types.InlineKeyboardButton('loose',callback_data='loose_medium_straight')
+        btn3 = types.InlineKeyboardButton('relaxed',callback_data='relaxed_medium_straight')
         btn4 = types.InlineKeyboardButton('вернуться к выбору типа фигуры',callback_data='start')
         m.row(btn1,btn2,btn3)
         m.row(btn4)
@@ -225,9 +225,9 @@ def callback_handling(callback):
     #КНОПКА ТРАПЕЦИЯ 
     if callback.data == 'trap':
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='slim_medium_straight')
-        btn2 = types.InlineKeyboardButton('2',callback_data='regular_medium_straight')
-        btn3 = types.InlineKeyboardButton('3',callback_data='relaxed_medium_straight')
+        btn1 = types.InlineKeyboardButton('slim',callback_data='slim_medium_straight')
+        btn2 = types.InlineKeyboardButton('regular',callback_data='regular_medium_straight')
+        btn3 = types.InlineKeyboardButton('relaxed',callback_data='relaxed_medium_straight')
         btn4 = types.InlineKeyboardButton('вернуться к выбору типа фигуры',callback_data='start')
         m.row(btn1,btn2,btn3)
         m.row(btn4)
@@ -241,8 +241,8 @@ def callback_handling(callback):
     #КНОПКА ОВАЛ
     if callback.data == 'ell':
         m = types.InlineKeyboardMarkup()
-        btn2 = types.InlineKeyboardButton('1',callback_data='loose_medium_straight')
-        btn3 = types.InlineKeyboardButton('2',callback_data='relaxed_medium_straight')
+        btn2 = types.InlineKeyboardButton('loose',callback_data='loose_medium_straight')
+        btn3 = types.InlineKeyboardButton('relaxed',callback_data='relaxed_medium_straight')
         btn4 = types.InlineKeyboardButton('вернуться к выбору типа фигуры',callback_data='start')
         m.row(btn2,btn3)
         m.row(btn4)
@@ -256,8 +256,8 @@ def callback_handling(callback):
     #КНОПКА ПЕРЕВЕРНУТЫЙ ТРЕУГОЛЬНИК 
     if callback.data == 'rev_tri':
         m = types.InlineKeyboardMarkup()
-        btn2 = types.InlineKeyboardButton('1',callback_data='regular_medium_straight')
-        btn3 = types.InlineKeyboardButton('2',callback_data='relaxed_medium_straight')
+        btn2 = types.InlineKeyboardButton('regular',callback_data='regular_medium_straight')
+        btn3 = types.InlineKeyboardButton('relaxed',callback_data='relaxed_medium_straight')
         btn4 = types.InlineKeyboardButton('вернуться к выбору типа фигуры',callback_data='start')
         m.row(btn2,btn3)
         m.row(btn4)
@@ -273,11 +273,12 @@ def callback_handling(callback):
     if callback.data == 'slim_medium_straight':
         user_info.append('slim_medium_straight')
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='longsleeve_round')
-        btn2 = types.InlineKeyboardButton('2',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('3',callback_data='free')
+        btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
+        btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
+        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
-        m.row(btn1,btn2,btn3)
+        m.row(btn1,btn2)
+        m.row(btn3)
         m.row(btn4)
         bot.send_message(callback.message.chat.id,'К этим джинсам подойдут следующие футболки:')
         for i in range(3):
@@ -290,11 +291,12 @@ def callback_handling(callback):
     if callback.data == 'regular_medium_straight':
         user_info.append('regular_medium_straight') #DANGER IF THEY PICKED WRONGLY
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='longsleeve_round')
-        btn2 = types.InlineKeyboardButton('2',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('3',callback_data='free')
+        btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
+        btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
+        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
-        m.row(btn1,btn2,btn3)
+        m.row(btn1,btn2)
+        m.row(btn3)
         m.row(btn4)
         bot.send_message(callback.message.chat.id,'К этим джинсам подойдут следующие футболки:')
         for i in range(3):
@@ -307,11 +309,12 @@ def callback_handling(callback):
     if callback.data == 'loose_medium_straight':
         user_info.append('loose_medium_straight')
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='longsleeve_round')
-        btn2 = types.InlineKeyboardButton('2',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('3',callback_data='free')
+        btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
+        btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
+        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
-        m.row(btn1,btn2,btn3)
+        m.row(btn1,btn2)
+        m.row(btn3)
         m.row(btn4)
         bot.send_message(callback.message.chat.id,'К этим джинсам подойдут следующие футболки:')
         for i in range(3):
@@ -322,11 +325,12 @@ def callback_handling(callback):
     if callback.data == 'relaxed_medium_straight':
         user_info.append('relaxed_medium_straight')
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('1',callback_data='longsleeve_round')
-        btn2 = types.InlineKeyboardButton('2',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('3',callback_data='free')
+        btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
+        btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
+        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
-        m.row(btn1,btn2,btn3)
+        m.row(btn1,btn2)
+        m.row(btn3)
         m.row(btn4)
         bot.send_message(callback.message.chat.id,'К этим джинсам подойдут следующие футболки:')
         for i in range(3):
@@ -487,7 +491,7 @@ def callback_handling(callback):
         m.row(btn1,btn2,btn3)
         m.row(btn4,btn5)
         bot.send_message(callback.message.chat.id,'Пожалуйста, оцените, насколько Вам понравился подбор одежды:',reply_markup=m)
-    
+        
     
     
     
