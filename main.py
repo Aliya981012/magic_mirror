@@ -57,7 +57,6 @@ jeans_short_triangle_men = ['Regular. Классический прямой кр
 
 jeans_images_trap_men_front = ['https://i.yapx.cc/XrJ5M.png', 'https://i.yapx.cc/XrJ5K.png','https://i.yapx.cc/XrWw1.png']
 
-
 jeans_images_trap_men_back = ['https://i.yapx.cc/XrVPC.png','https://i.yapx.cc/XrN0r.png','https://i.yapx.cc/XrWwz.png']
 
 
@@ -109,17 +108,17 @@ shirts_images = ['https://i.yapx.cc/XrMAu.png', 'https://i.yapx.cc/XrMAy.png','h
 
 shirt_images_longsleeve = ['https://i.yapx.cc/XrMAu.png', ]
 #СПИСОК ОПИСАНИЙ ДЛЯ КАЖДЫХ ДЖИНС ПО ОТДЕЛЬНОСТИ
-jeans_description_regular_medium_straight = ['Regular.Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять кэжл брюки.',
+jeans_description_regular_medium_straight = ['Regular.Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять повседневные брюки.',
                                              'С чем носить: клетчатые и однотонные рубашки, футболки, поло, блейзеры, вязаные кардиганы, пуловеры. Обувь:любая.']
 
-jeans_description_slim_medium_straight = ['Slim. Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять кэжл брюки',
-                                     'С чем носить: короткие футболки, зауженные поло, рубашки классика, рубашки кэжл. Верхняя одежда: тренч, бомбер. Обувь: мокасины, кеды, кроссовки.']
+jeans_description_slim_medium_straight = ['Slim. Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять повседневные брюки',
+                                     'С чем носить: короткие футболки, зауженные поло, рубашки классика, повседневные рубашки. Верхняя одежда: плащ, бомбер (легкая короткая куртка). Обувь: мокасины, кеды, кроссовки.']
 
-jeans_description_relaxed_medium_straight = ['Relaxed.Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять кэжл брюки.',
+jeans_description_relaxed_medium_straight = ['Relaxed.Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять повседневные брюки.',
                                              'С чем носить: худи, свитшоты. Объемный верх. Обувь: ботинки на шнуровке, кеды, мокасины. ']
 
-jeans_description_loose_medium_straight = ['Loose.Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять кэжл брюки.',
-                                             'С чем носить: просторные толстовки, джемперы оверсайз, мешковатые футболки. Верхняя одежда: бомбер, куртка оверсайз, тренч прямого кроя. Обувь: высокие кроссовки, высокие кеды.']
+jeans_description_loose_medium_straight = ['Loose.Посадка Medium. Средняя посадка на уровне бедер или чуть выше. Покрой низа Straight. Популярный классический фасон с небольшим сужением может заменять повседневные брюки.',
+                                             'С чем носить: просторные толстовки, джемперы оверсайз, мешковатые футболки. Верхняя одежда: бомбер (легкая короткая куртка), куртка оверсайз, плащ прямого кроя. Обувь: высокие кроссовки, высокие кеды.']
 
 
 #СПИСОК КАРТИНОК ПО ОТДЕЛЬНОСТИ
@@ -135,11 +134,11 @@ jeans_images_loose_medium_straight = ['https://i.yapx.cc/XrWw4.png','https://i.y
 #СПИСОК КРАТКИХ ОПИСАНИЙ футболок
 shirts_short = ['Лонгслив. Классическая универсальная футболка с длинным рукавом и круглым вырезом. Подходит всем.',
                 'Классика. Универсальная футболка по фигуре с короткими рукавами и круглым вырезом. Не подходит полным людям в качестве одного слоя.',
-                'Свободный крой. Футболка с коротким рукавом прямого кроя. Подходит для всех.']
+                'Свободный крой (оверсайз). Футболка с коротким рукавом прямого кроя. Подходит для всех.']
 
 shirts_description = ['Лонгслив. C чем носить: кардиган с круглым и треугольным вырезом, пиджак/блейзер, рубашки (tapered|regular fit), не застегивая, толстовка на молнии, джинсовая куртка, жилет.',
                       'Классика. C чем носить: кардиган с круглым и треугольным вырезом, пиджак/блейзер, рубашки (tapered|regular fit), не застегивая, толстовка на молнии, джинсовая куртка, жилет.',
-                      'Свободный крой. C чем носить:рубашки (tapered|regular fit), не застегивая, толстовка на молнии, джинсовая куртка, жилет.']
+                      'Свободный крой (оверсайз). C чем носить:рубашки (tapered|regular fit), не застегивая, толстовка на молнии, джинсовая куртка, жилет.']
 
 
 #ОБРАБОТКА КОМАНД
@@ -175,6 +174,7 @@ def any_message(message):
 #КНОПКА СТАРТ
 def callback_handling(callback):
     if callback.data == 'start':
+        user_info = []
         m = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('прямоугольник',callback_data='rectangle')
         btn2 = types.InlineKeyboardButton('треугольник',callback_data='tri')
@@ -275,7 +275,7 @@ def callback_handling(callback):
         m = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
         btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
+        btn3 = types.InlineKeyboardButton('оверсайз',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
         m.row(btn1,btn2)
         m.row(btn3)
@@ -293,7 +293,7 @@ def callback_handling(callback):
         m = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
         btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
+        btn3 = types.InlineKeyboardButton('оверсайз',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
         m.row(btn1,btn2)
         m.row(btn3)
@@ -311,7 +311,7 @@ def callback_handling(callback):
         m = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
         btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
+        btn3 = types.InlineKeyboardButton('оверсайз',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
         m.row(btn1,btn2)
         m.row(btn3)
@@ -327,7 +327,7 @@ def callback_handling(callback):
         m = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('лонгслив',callback_data='longsleeve_round')
         btn2 = types.InlineKeyboardButton('классика',callback_data='classic_round')
-        btn3 = types.InlineKeyboardButton('свободный крой',callback_data='free')
+        btn3 = types.InlineKeyboardButton('оверсайз',callback_data='free')
         btn4 = types.InlineKeyboardButton('вернуться к типам фигуры',callback_data='start')
         m.row(btn1,btn2)
         m.row(btn3)
@@ -492,9 +492,16 @@ def callback_handling(callback):
         m.row(btn4,btn5)
         bot.send_message(callback.message.chat.id,'Пожалуйста, оцените, насколько Вам понравился подбор одежды:',reply_markup=m)
         
-    
-    
-    
-    
-    
+    if callback.data == 'os1':
+        bot.send_message(callback.message.chat.id,'Спасибо! Ответ записан. Ваша оценка: 1 из 5.')
+    if callback.data == 'os2':
+        bot.send_message(callback.message.chat.id,'Спасибо! Ответ записан. Ваша оценка: 2 из 5.')
+    if callback.data == 'os3':
+        bot.send_message(callback.message.chat.id,'Спасибо! Ответ записан. Ваша оценка: 3 из 5.')
+    if callback.data == 'os4':
+        bot.send_message(callback.message.chat.id,'Спасибо! Ответ записан. Ваша оценка: 4 из 5.')
+    if callback.data == 'os5':
+        bot.send_message(callback.message.chat.id,'Спасибо! Ответ записан. Ваша оценка: 5 из 5.')
+
+
 bot.polling(non_stop=True)
