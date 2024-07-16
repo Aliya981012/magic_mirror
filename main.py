@@ -174,7 +174,6 @@ def any_message(message):
 #КНОПКА СТАРТ
 def callback_handling(callback):
     if callback.data == 'start':
-        user_info = []
         m = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('прямоугольник',callback_data='rectangle')
         btn2 = types.InlineKeyboardButton('треугольник',callback_data='tri')
