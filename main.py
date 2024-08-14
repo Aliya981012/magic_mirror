@@ -175,11 +175,11 @@ def any_message(message):
 def callback_handling(callback):
     if callback.data == 'start':
         m = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('прямоугольник',callback_data='rectangle')
-        btn2 = types.InlineKeyboardButton('треугольник',callback_data='tri')
-        btn3 = types.InlineKeyboardButton('трапеция',callback_data='trap')
-        btn4 = types.InlineKeyboardButton('овал',callback_data='ell')
-        btn5 = types.InlineKeyboardButton('перевернутый треугольник',callback_data='rev_tri')
+        btn1 = types.InlineKeyboardButton('прямоугольник',url='https://aliautabaeva.bubbleapps.io/version-test/slim_rectangle?debug_mode=true')
+        btn2 = types.InlineKeyboardButton('треугольник',url='https://aliautabaeva.bubbleapps.io/version-test/regular_tri?debug_mode=true')
+        btn3 = types.InlineKeyboardButton('трапеция',url='https://aliautabaeva.bubbleapps.io/version-test/slim_trap?debug_mode=true')
+        btn4 = types.InlineKeyboardButton('овал',url='https://aliautabaeva.bubbleapps.io/version-test/loose_ell?debug_mode=true')
+        btn5 = types.InlineKeyboardButton('перевернутый треугольник',url='https://aliautabaeva.bubbleapps.io/version-test/regular_reversed?debug_mode=true')
         m.row(btn1,btn2)
         m.row(btn3,btn4)
         m.row(btn5)
@@ -198,7 +198,7 @@ def callback_handling(callback):
         btn3 = types.InlineKeyboardButton('вернуться к выбору типа фигуры',callback_data='start')
         m.row(btn1,btn2)
         m.row(btn3)
-        bot.send_message(callback.message.chat.id,'Вашему типу фигуры подойдут следующие джинсы:')
+        bot.send_message(callback.message.chat.id,url = 'https://aliautabaeva.bubbleapps.io/version-test/try_carousel?debug_mode=true')
         for i in range(2):
             bot.send_photo(callback.message.chat.id, jeans_images_rectangle_men_front[i])
             bot.send_message(callback.message.chat.id,jeans_short_rectangle_men[i])
